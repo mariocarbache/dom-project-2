@@ -1,1 +1,17 @@
 /* Write your CSS code in this file */
+
+body {
+    text-align: center;
+    background-color: cornflowerblue;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 5px 5px 2px black;
+    color: snow;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 16px;
+}
