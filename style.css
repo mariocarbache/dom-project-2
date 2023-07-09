@@ -12,6 +12,68 @@ h1 {
     font-size: 50px;
 }
 
-h2 {
-    font-size: 16px;
+#container2 {
+    margin-top: 25px;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
 }
+
+input {
+    border-radius: 10%;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: black;
+    background-color: snow;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px 32px;
+    text-align: center;
+}
+
+#submit {
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 20%;
+    font-family: 'Press Start 2P', cursive;
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+#hint {
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 20%;
+    font-family: 'Press Start 2P', cursive;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+#reset {
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    border-radius: 20%;
+    font-family: 'Press Start 2P', cursive;
+    background-color: orangered;
+    cursor: pointer;
+}
+
+
+

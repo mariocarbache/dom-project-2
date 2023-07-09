@@ -11,8 +11,7 @@
   </head>
 
   <body>
-    <!-- <script src='js/guessing-game.js'></script> -->
-    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+    
     <h1>Guessing Game</h1>
 
     <div id="container1">
@@ -20,7 +19,20 @@
     </div>
 
     <div id="container2">
-      <p>Testing Text</p>
+      <p id="outputtext">Welcome, let's play!</p>
     </div>
+
+    <div id="container3">
+      <input type="text" id="userInput" placeholder="YOUR GUESS HERE">
+    </div>
+
+    <div id="container4">
+      <button type="button" id="submit">Submit Guess</button>
+      <button type="button" id="hint">Hint</button>
+      <button type="button" id="reset">Reset Game</button>
+    </div>
+
+    <script src='js/guessing-game.js'></script>
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
   </body>
 </html>
