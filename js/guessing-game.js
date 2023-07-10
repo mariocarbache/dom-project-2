@@ -57,27 +57,28 @@ class Game {
 
     checkGuess(){
         let message = "";
+        //create a count variable before to count numbers of attemps made before going into the following statements
         if(this.pastGuesses.includes(this.playersGuess)){
             message = "You have already guessed that number.";
         }else{    
-        if(this.playersGuess==this.winningNumber && this.pastGuesses.length != 5){
+        if(this.playersGuess==this.winningNumber && this.pastGuesses.length <= 5){
             this.pastGuesses.push(this.playersGuess)
             message = "You Win!";
-        }else if(this.difference()<10 && this.pastGuesses.length != 5){
+        }else if(this.difference()<10 && this.pastGuesses.length < 5){
             this.pastGuesses.push(this.playersGuess)
             message = "You're burning up!";
-        }else if(this.difference()<25 && this.pastGuesses.length != 5){
+        }else if(this.difference()<25 && this.pastGuesses.length < 5){
             this.pastGuesses.push(this.playersGuess)
             message = "You're lukewarm.";
-        }else if(this.difference()<50 && this.pastGuesses.length != 5){
+        }else if(this.difference()<50 && this.pastGuesses.length < 5){
             this.pastGuesses.push(this.playersGuess)
             message = "You're a bit chilly.";
         }
-        else if(this.difference()<75 && this.pastGuesses.length != 5){
+        else if(this.difference()<75 && this.pastGuesses.length < 5){
             this.pastGuesses.push(this.playersGuess)
             message = "You're ice cold!";
         }
-        else if(this.pastGuesses.length==5 && this.playersGuess!=this.winningNumber){
+        else if(this.pastGuesses.length <= 5 && this.playersGuess!=this.winningNumber){
             message = "You Lose";
         }
     }
