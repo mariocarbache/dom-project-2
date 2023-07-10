@@ -100,4 +100,23 @@ class Game {
     }
 }
 
-let g1 = new Game();
+let submit = document.getElementById("submit");
+let hint = document.getElementById("hint");
+let reset = document.getElementById("reset");
+
+let game = new Game();
+
+submit.addEventListener("click", function(){
+    let output = document.getElementById("outputtext");
+    let input = document.getElementById("userInput").value;
+    input = parseInt(input);
+    output.innerHTML = game.playersGuessSubmission(input);
+});
+
+hint.addEventListener("click", function(){
+    let output = document.getElementById("outputtext");
+    output.innerHTML = game.provideHint();
+})
+
+reset.addEventListener("click", () => location.reload());
+
